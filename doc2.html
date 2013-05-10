@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="de" xml:lang="de" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<style type="text/css">
+<!--
+	.box {  background: red; width: 300px; height: 300px;position: relative; }    
+	p a {  color: blue;}
+-->
+</style>
+<script type="text/javascript">
+	$(function() {
+		$('#fadeout').click(function()		{
+			$('#box1').fadeOut('slow');
+		});
+		$('#fadein').click(function()		{
+			$('#box1').fadeIn('slow');
+		});
+		$('#slideup').click(function()		{
+			$('#box1').slideUp('slow');
+		});
+		$('#slidedown').click(function()		{
+			$('#box1').slideDown('slow');
+		});
+		$('#hide').click(function()		{
+			$('#box1').hide('slow');
+		});
+		$('#show').click(function()		{
+			$('#box1').show('slow');
+		});
+		$('#changelinkcolor1').click(function()		{
+			$('p a').css('color', 'yellow');
+		});
+		$('#changelinkcolor2').click(function()		{
+			$('p a').css('color', 'blue');
+		});
+	});
+	
+</script>
+</head>
+<body>
+	<a href="index.html">b4</a>
+	<a href="doc3.html">next</a>
+	<H1>Day 2: Fade, Slide, and Show Methods</h1>
+	<hr>
+	<div id="box1" class="box"></div>
+	<a href="#" id="slideup">Click for slideup</a><br>
+	<a href="#" id="slidedown">Click for slidedown</a><br>
+	<a href="#" id="hide">Click for hide</a><br>
+	<a href="#" id="show">Click for show</a><br>
+	<hr>
+	<a href="#" id="changelinkcolor1">Click for change the linkcolor to Yellow</a><br>
+	<a href="#" id="changelinkcolor2">Click for change the linkcolor to Blue</a><br>
+	<p>
+		<a href="#">Durchgeführte</a> Transfers können Sie beliebig oft rückgängig machen, indem Sie den gekauften <a href="#">Spieler</a> einfach wieder in die "Spielerauswahl"-Box ziehen. Das entscheidende Kriterium ist, dass zum Ende des <a href="#">Transferfensters</a> maximal vier Spieler verkauft wurden. Auch hierbei müssen Sie selbstverständlich alle anderen Restriktionen beachten. Dies gilt vor allem, wenn Sie einen Spieler in Ihren Reihen haben, der während der Saison seinen Verein wechselt. Sollten Sie einen Spieler aus Ihrem Kader verkaufen, der mittlerweile nicht mehr in der Bundesliga spielt, ist dieser auch nicht mehr in der Spielerliste zu finden. Um diesen Akteur wieder in Ihren Kader zu befördern, klicken Sie bitte auf die Schaltfläche "Kader zurücksetzen" unterhalb der Reservebank. Damit wird automatisch Ihr Hinrunden-Kader wieder hergestellt.
+	</p>
+</body>
+</html>

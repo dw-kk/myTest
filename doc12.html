@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="de" xml:lang="de" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/jquery-timing.min.js"></script>
+
+<style type="text/css">
+<!--
+	.box {  background: red; 
+			width: 200px; 
+			height: 200px;
+			position: absolute; 
+			top: 330px; 
+			left: 10px; }    
+-->
+</style>
+<script type="text/javascript">
+
+	$(function() {
+		
+		$('#box1').repeat(3000).animate({"left" : 710},1000).animate({"left" : 10},1000);
+
+	});
+
+</script>
+</head>
+<body>
+	<a href="doc11.html">b4</a>
+	<a href="doc13.html">next</a>
+	<H1>Day 12: jQuery-Timing(3)</h1>
+	<hr>
+	<pre>
+	$(function() {
+		
+		$('#box1').repeat(3000).animate({"left" : 710},1000).animate({"left" : 10},1000);
+
+	});
+	</pre>
+	<hr>
+	<div id="box1" class="box"></div>
+
+</body>
+</html>

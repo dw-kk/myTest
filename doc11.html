@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="de" xml:lang="de" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/jquery-timing.min.js"></script>
+
+<style type="text/css">
+<!--
+	.box {  background: red; 
+			width: 50px; 
+			height: 50px;
+			position: absolute; 
+			top: 380px; 
+			left: 360px; }    
+-->
+</style>
+<script type="text/javascript">
+
+	$(function() {
+		
+		var options = { duration:1000, easing:'linear', queue:'myFX' };
+		$("#box1").repeat().animate({ "left" : "710px" }, options).animate({ "left" : "360px" }, options)
+			.animate({ "left" : "10px" }, options).animate({ "left" : "360px" }, options).join('myFX')
+			._.dequeue('myFX');
+			
+		var options = { duration:1000, easing:'linear' };
+		$("#box1").repeat().animate({top:580},options).animate({top:680},options)
+			.animate({top:580},options).animate({top:380},options).join();
+
+	});
+
+</script>
+</head>
+<body>
+	<a href="doc10.html">b4</a>
+	<a href="doc12.html">next</a>
+	<H1>Day 11: jQuery-Timing(2)</h1>
+	<hr>
+	<pre>
+	$(function() {
+		
+		var options = { duration:1000, easing:'linear', queue:'myFX' };
+		$("#box1").repeat().animate({ "left" : "710px" }, options).animate({ "left" : "360px" }, options)
+			.animate({ "left" : "10px" }, options).animate({ "left" : "360px" }, options).join('myFX')
+			._.dequeue('myFX');
+			
+		var options = { duration:1000, easing:'linear' };
+		$("#box1").repeat().animate({top:480},options).animate({top:580},options)
+			.animate({top:480},options).animate({top:280},options).join();
+
+	});
+	</pre>
+	<hr>
+	<div id="box1" class="box"></div>
+
+</body>
+</html>
