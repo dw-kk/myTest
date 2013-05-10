@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="de" xml:lang="de" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
+<style type="text/css">
+<!--
+	.box {  background: red; width: 300px; height: 300px;position: relative; }    
+	p a {  color: blue;}
+	ul li { margin-bottom:10px; border-bottom: 1px solid red; }
+-->
+</style>
+<script type="text/javascript">
+$(document).ready(function() { 
+	$(function() {
+		$('#fadeout').click(function()		{
+			$('#box1').fadeOut('slow');
+		});
+		$('#fadein').click(function()		{
+			$('#box1').fadeIn('slow');
+		});
+	});
+	$(function() {
+		$('ul').each(function(){
+			$(this).children('li').eq(-1).css('border', '0');
+		});
+	});
+});
+	</script>
+</head>
+<body>
+	<a href="doc2.html">next</a>
+	<H1>Day 1: Downloading the Library </h1>
+	<hr>
+	<div id="box1" class="box"></div>
+	<a href="#" id="fadeout">Click for fadeout</a><br>
+	<a href="#" id="fadein">Click for fadein</a><br>
+	<hr><hr>
+	<ul>
+		<li>border-bottom: 1px solid red</li>
+		<li>border-bottom: 1px solid red</li>
+		<li>border-bottom: 1px solid red</li>
+	</ul>
+</body>
+</html>
